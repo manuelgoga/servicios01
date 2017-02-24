@@ -14,6 +14,7 @@
 	<script type="text/javascript">
 		$(document).ready(function (){  //Funcion por defecto
 			$("#GServicios").tap(function(){ // EVENTO PARA REGISTRAR SERVICIOS
+				alert("Funciona el boton guardar servicios");
 				var NS=$("#NomServicio").val();
 				var D=$("#Direccion").val();
 				var R=$("#RFC").val();
@@ -35,7 +36,7 @@
 			});	
 			
 			$("#btnConServ").tap(function(){ //EVENTO PARA CONSULTAR SERVICIOS
-				//alert("Funciona el boton cocsultar servicios");
+				alert("Funciona el boton cocsultar servicios");
 				$.ajax({
 					type: "POST",
 					url: "http://www.manuelmovil.esy.es/Consulta.php",
